@@ -16,6 +16,7 @@ lsp.enable("ts_ls")
 lsp.enable("solargraph")
 lsp.enable("html")
 lsp.enable("lua_ls")
+lsp.enable("rubocop")
 
 require("vim-options")
 require("lazy").setup("plugins")
