@@ -1,6 +1,16 @@
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
+vim.cmd([[
+  set number
+  set wrap
+  set mouse=a
+  set expandtab
+  set tabstop=2
+  set softtabstop=2
+  set shiftwidth=2
+  
+  vmap <C-c> "+y
+  autocmd TermOpen * setlocal nonumber norelativenumber
+]])
+
 vim.g.mapleader = " "
 vim.g.background = "light"
 
