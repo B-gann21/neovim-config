@@ -23,6 +23,8 @@ return {
 			lspconfig("ts_ls", { capabilities = capabilities })
 			lspconfig("solargraph", { capabilities = capabilities })
 			lspconfig("html", { capabilities = capabilities })
+			lspconfig("cssls", { capabilities = capabilities })
+			lspconfig("css_variables", { capabilities = capabilities })
 			lspconfig("lua_ls", { capabilities = capabilities })
 			lspconfig("rubocop", { capabilities = capabilities })
 
