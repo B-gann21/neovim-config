@@ -27,6 +27,23 @@ return {
 			lspconfig("css_variables", { capabilities = capabilities })
 			lspconfig("lua_ls", { capabilities = capabilities })
 			lspconfig("rubocop", { capabilities = capabilities })
+			lspconfig("eslint", { capabilities = capabilities })
+
+      local lsp = vim.lsp
+      lsp.enable("ts_ls")
+      lsp.enable("eslint")
+      lsp.enable("cssls")
+      lsp.enable("css_variables")
+      lsp.enable("solargraph")
+      lsp.enable("html")
+      lsp.enable("lua_ls")
+      lsp.enable("rubocop")
+
+      vim.diagnostic.config({
+        virtual_text = true,
+        signs = true,
+        update_in_insert = false,
+      })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
